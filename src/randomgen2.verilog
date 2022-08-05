@@ -98,3 +98,8 @@ endmodule
 entity, architecture, package or configuration keyword expected
 design unit missing
 */
+
+/*
+Verilog overview
+https://www.eng.auburn.edu/~nelsovp/courses/elec4200/VHDL/Verilog_Overview_4200.pdf
+*/
