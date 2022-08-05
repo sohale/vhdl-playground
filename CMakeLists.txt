@@ -1,5 +1,7 @@
 # VHDL Continous Integration Example
 # Copyright (C) 2017  Mario Barbareschi
+# https://github.com/mariobarbareschi/vhdl_ci/blob/master/CMakeLists.txt
+# Modified by SS
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published
@@ -13,13 +15,16 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+
 #Uncomment and customize the following command whenever gtkwave is not your default command to watch
 #the VCD simulation file.
 
 #set(VCD_VIEWER gtkwave)
+# set(VCD_VIEWER open -a gtkwave) # for MacOS. But this is docker
 
 #To make everything working, just add macros specified in the vhdl_macros.cmake file
-include(macro/vhdl_macros.cmake)
+#include(macro/vhdl_macros.cmake)
+include(scripts/vhdl_macros.cmake)
 
 #Give a name to the project
 #Actually, the language could not be VHDL since there is no a compiler environment for that language
