@@ -4,4 +4,7 @@
 add_vhdl_source(randomgen1.vhdl random_gen_1)
 
 # It is verilog
-# add_vhdl_source(randomgen2.vhdl random_gen_2)
+# add_verilog_source(randomgen2.verilog random_gen_2)
+
+# converted code
+# add_vhdl_source(randomgen2_vhdl.vhdl random_gen_2)
