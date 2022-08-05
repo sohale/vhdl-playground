@@ -13,7 +13,7 @@ docker run -it --rm \
    /bin/bash -c '
    : \
    && set -eux \
-   mkdir -p /xyz/build \
+   && mkdir -p /xyz/build \
    && cd /xyz/build \
    && cmake .. \
    && make all test
