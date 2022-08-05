@@ -5,6 +5,7 @@
 # docker pull mariobarbareschi/vhdl_ci
 # See https://hub.docker.com/r/mariobarbareschi/vhdl_ci
 # Continuous Integration for the VHDL involving GHDL
+# Contents of the working directory in that image is from: https://github.com/mariobarbareschi/vhdl_ci
 
 docker run -it --rm \
    -v $(pwd):/xyz \
