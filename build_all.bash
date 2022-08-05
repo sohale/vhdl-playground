@@ -1,9 +1,10 @@
 #!/bin/bash
-# srach "vhdl compile docker"
+# search "vhdl compile docker"
 # Continuous integration for open FPGA projects - Benedek Rácz
 
 # docker pull mariobarbareschi/vhdl_ci
-
+# See https://hub.docker.com/r/mariobarbareschi/vhdl_ci
+# Continuous Integration for the VHDL involving GHDL
 
 docker run -it --rm \
    -v $(pwd):/opt/build \
