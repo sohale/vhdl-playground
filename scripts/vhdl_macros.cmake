@@ -83,7 +83,7 @@ macro (add_testbench_source)
         add_custom_target("${TEST_NAME}" COMMAND ${GHDL_COMPILER} -r -v ${ARGV1}  --stop-time=1000ns --vcd=${TRACE_VCD_PATH} --fst=${TRACE_FST_PATH} WORKING_DIRECTORY ${CMAKE_BINARY_DIR} DEPENDS "${ARGV1}")
 
 	add_custom_target("sim_${ARGV1}" COMMAND ${VCD_VIEWER_COMMAND} ${TRACE_VCD_PATH} WORKING_DIRECTORY ${CMAKE_BINARY_DIR} DEPENDS "${TEST_NAME}")
-        
+
         add_test(NAME "${ARGV1}" COMMAND ${GHDL_COMPILER}  -r -v "${ARGV1}" --assert-level=error WORKING_DIRECTORY ${CMAKE_BINARY_DIR})
         list (APPEND VHDL_TEST_MODULE "${ARGV1}")
 
