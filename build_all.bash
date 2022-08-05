@@ -7,11 +7,14 @@
 # Continuous Integration for the VHDL involving GHDL
 
 docker run -it --rm \
-   -v $(pwd):/opt/build \
+   -v $(pwd):/xyz \
    mariobarbareschi/vhdl_ci \
    /bin/bash -c '
+   : \
+   && set -eux \
    mkdir -p /opt/build \
    && cd /opt/build \
+   && cd /xyz/build \
    && cmake .. \
    && make all test
    '
