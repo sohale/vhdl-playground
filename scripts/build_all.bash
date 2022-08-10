@@ -14,6 +14,8 @@ docker run -it --rm \
    : \
    && set -eux \
    && mkdir -p /xyz/build \
+   && rm -rf xyz/build \
+   && mkdir -p /xyz/build \
    && cd /xyz/build \
    && cmake .. \
    && make all test
